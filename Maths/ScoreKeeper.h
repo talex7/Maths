@@ -1,5 +1,5 @@
 //
-//  AdditionQuestion.h
+//  ScoreKeeper.h
 //  Maths
 //
 //  Created by Thomas Alexanian on 2016-11-01.
@@ -8,10 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AdditionQuestion : NSObject
+@interface ScoreKeeper : NSObject
 
-@property NSString *question;
-@property NSInteger answer;
+@property NSInteger right;
+@property NSInteger wrong;
 
+-(void)displayScore;
 
 @end
+
+
+

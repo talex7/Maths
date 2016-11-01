@@ -10,6 +10,7 @@
 		74024C761DC9005300E88B24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74024C751DC9005300E88B24 /* main.m */; };
 		74024C7E1DC90DA800E88B24 /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 74024C7D1DC90DA800E88B24 /* AdditionQuestion.m */; };
 		74024C811DC92B5200E88B24 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 74024C801DC92B5200E88B24 /* InputHandler.m */; };
+		74024C841DC9326D00E88B24 /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = 74024C831DC9326D00E88B24 /* ScoreKeeper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		74024C7D1DC90DA800E88B24 /* AdditionQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdditionQuestion.m; sourceTree = "<group>"; };
 		74024C7F1DC92B5200E88B24 /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
 		74024C801DC92B5200E88B24 /* InputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
+		74024C821DC9326D00E88B24 /* ScoreKeeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreKeeper.h; sourceTree = "<group>"; };
+		74024C831DC9326D00E88B24 /* ScoreKeeper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreKeeper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				74024C7D1DC90DA800E88B24 /* AdditionQuestion.m */,
 				74024C7F1DC92B5200E88B24 /* InputHandler.h */,
 				74024C801DC92B5200E88B24 /* InputHandler.m */,
+				74024C821DC9326D00E88B24 /* ScoreKeeper.h */,
+				74024C831DC9326D00E88B24 /* ScoreKeeper.m */,
 			);
 			path = Maths;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74024C841DC9326D00E88B24 /* ScoreKeeper.m in Sources */,
 				74024C761DC9005300E88B24 /* main.m in Sources */,
 				74024C811DC92B5200E88B24 /* InputHandler.m in Sources */,
 				74024C7E1DC90DA800E88B24 /* AdditionQuestion.m in Sources */,
@@ -251,6 +257,7 @@
 				74024C7B1DC9005300E88B24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

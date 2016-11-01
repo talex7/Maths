@@ -13,10 +13,15 @@
 +(NSString*)convertInput {
     
     char answer[255];
+    
     NSCharacterSet *charSet = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+    
     fgets(answer, 256, stdin);
+    
     NSString *result = [NSString stringWithCString:answer encoding:NSUTF8StringEncoding];
+    
     result = [result stringByTrimmingCharactersInSet:charSet];
+    
     return result;
 }
 
