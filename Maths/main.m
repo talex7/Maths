@@ -9,9 +9,20 @@
 #import <Foundation/Foundation.h>
 
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+   
+    while (YES) {
+        
+        char answer[255];
+        NSCharacterSet *charSet = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+        
+        printf("Enter a string:");
+        fgets(answer, 256, stdin);
+        NSString *result = [NSString stringWithCString:answer encoding:NSUTF8StringEncoding];
+        result = [result stringByTrimmingCharactersInSet:charSet];
+        
+        NSLog(@"%@", result);
+        
     }
+    
     return 0;
 }
