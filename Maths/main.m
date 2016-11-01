@@ -8,30 +8,27 @@
 
 #import <Foundation/Foundation.h>
 #import "AdditionQuestion.h"
+#import "InputHandler.h"
 
 
 int main(int argc, const char * argv[]) {
     
+    NSString *quit = @"quit";
     NSLog(@"Welcome to Maths!!! Type 'quit' at any time to stop the game. Here we go....\n");
     
     while (YES) {
-        
-        char answer[255];
-        NSCharacterSet *charSet = [NSCharacterSet whitespaceAndNewlineCharacterSet];
-        
+  
         AdditionQuestion *q1 = [[AdditionQuestion alloc] init];
         NSLog(@"%@\n", q1.question);
+
         
+        NSString *convertedResult = [InputHandler convertInput];
         
-        fgets(answer, 256, stdin);
-        NSString *result = [NSString stringWithCString:answer encoding:NSUTF8StringEncoding];
-        result = [result stringByTrimmingCharactersInSet:charSet];
-        
-        if ([result isEqualToString:@"quit"]) {
+        if ([convertedResult isEqualToString:quit]) {
             
             break;
             
-        } else if ([result intValue] == q1.answer) {
+        } else if ([convertedResult intValue] == q1.answer) {
             
             NSLog(@"Right!");
             

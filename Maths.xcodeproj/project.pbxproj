@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		74024C761DC9005300E88B24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74024C751DC9005300E88B24 /* main.m */; };
 		74024C7E1DC90DA800E88B24 /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 74024C7D1DC90DA800E88B24 /* AdditionQuestion.m */; };
+		74024C811DC92B5200E88B24 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 74024C801DC92B5200E88B24 /* InputHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		74024C751DC9005300E88B24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		74024C7C1DC90DA800E88B24 /* AdditionQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdditionQuestion.h; sourceTree = "<group>"; };
 		74024C7D1DC90DA800E88B24 /* AdditionQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdditionQuestion.m; sourceTree = "<group>"; };
+		74024C7F1DC92B5200E88B24 /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
+		74024C801DC92B5200E88B24 /* InputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				74024C751DC9005300E88B24 /* main.m */,
 				74024C7C1DC90DA800E88B24 /* AdditionQuestion.h */,
 				74024C7D1DC90DA800E88B24 /* AdditionQuestion.m */,
+				74024C7F1DC92B5200E88B24 /* InputHandler.h */,
+				74024C801DC92B5200E88B24 /* InputHandler.m */,
 			);
 			path = Maths;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74024C761DC9005300E88B24 /* main.m in Sources */,
+				74024C811DC92B5200E88B24 /* InputHandler.m in Sources */,
 				74024C7E1DC90DA800E88B24 /* AdditionQuestion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
