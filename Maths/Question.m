@@ -16,8 +16,6 @@
     if (self) {
         _leftValue = arc4random_uniform(91) + 10;
         _rightValue = arc4random_uniform(91) + 10;
-        _question = [NSString stringWithFormat:@"What is %d + %d?", _leftValue, _rightValue];
-        _answer = _leftValue + _rightValue;
         _startTime = [NSDate date];
     }
     return self;
