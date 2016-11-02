@@ -10,11 +10,13 @@
 #import "AdditionQuestion.h"
 #import "InputHandler.h"
 #import "ScoreKeeper.h"
+#import "QuestionManager.h"
 
 
 int main(int argc, const char * argv[]) {
     
     ScoreKeeper *score = [[ScoreKeeper alloc] init];
+    QuestionManager *askedQs = [[QuestionManager alloc]init];
     
     NSString *quit = @"quit";
     NSLog(@"Welcome to Maths!!! Type 'quit' at any time to stop the game. Here we go....\n");
@@ -22,6 +24,8 @@ int main(int argc, const char * argv[]) {
     while (YES) {
   
         AdditionQuestion *q1 = [[AdditionQuestion alloc] init];
+        [askedQs.questions addObject:q1];
+        
         NSLog(@"%@\n", q1.question);
 
         NSString *convertedResult = [InputHandler convertInput];
@@ -35,11 +39,13 @@ int main(int argc, const char * argv[]) {
             NSLog(@"Right!");
             score.right +=1;
             [score displayScore];
+            NSLog(@"%@", [askedQs timeOutput]);
             
         } else {
             NSLog(@"Wrong!");
             score.wrong +=1;
             [score displayScore];
+            NSLog(@"%@", [askedQs timeOutput]);
         }
         
     }

@@ -10,7 +10,7 @@
 
 @implementation AdditionQuestion
 
-- (instancetype)init
+-(instancetype)init
 {
     self = [super init];
     if (self) {
@@ -18,8 +18,18 @@
         NSInteger num2 = arc4random_uniform(91) + 10;
         _question = [NSString stringWithFormat:@"What is %d + %d?", num1, num2];
         _answer = num1 + num2;
+        _startTime = [NSDate date];
     }
     return self;
+}
+
+-(NSInteger)answer {
+    _endTime = [NSDate date];
+    return _answer;
+}
+
+-(NSTimeInterval)answerTime {
+    return [_endTime timeIntervalSinceDate:_startTime];
 }
 
 @end
